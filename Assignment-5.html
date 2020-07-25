@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map</title>
+</head>
+<style>
+    body {
+        background-color: lightgray;
+    }
+
+    div {
+        text-align: center;
+    }
+
+    div h3 {
+        color: white;
+    }
+
+    div p {
+        color: red;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+
+    }
+
+    .img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 6px outset white;
+        margin-top: 12px;
+    }
+</style>
+
+<body>
+    <img src="Practical-5-img1.png" alt="Webpage" class="img" width="1000" height="45" usemap="#image">
+    <map name="image">
+        <area shape="rect" coords="3,3,96,3,93,38,5,41" href="index.html" alt="index page" target="_blanck">
+        <area shape="rect" coords="95,6,278,4,278,38,93,41" href="Assignment-1.html" alt="Assignment1 page"
+            target="_blanck">
+        <area shape="rect" coords="277,4,459,5,462,38,279,39" href="Assignment-2.html" alt="Assignment2 page"
+            target="_blank">
+        <area shape="rect" coords="460,3,642,1,640,42,463,41" href="Assignment-3.html" alt="Assignment3 page"
+            target="_blank">
+        <area shape="rect" coords="641,3,826,0,829,39,646,38" href="Assignment-4.html" alt="Assignment4 page"
+            target="_blank">
+        <area shape="rect" coords="826,2,997,3,999,38,830,38" href="Assignment-5.html" alt="Assignment5 page"
+            target="_blank">
+    </map>
+    <div>
+        <h3>Introduction to Front-End Technologies</h3>
+        <img src="Practical-5-img2.jpg" alt="" class="center" width="400" height="350" usemap="#practical_5">
+        <map name="practical_5">
+            <area shape="rect" coords="17, 9, 175, 9, 170, 163, 16, 165,17,5" href="HTML.html" alt="HTML Webpage"
+                target="_blank">
+            <area shape="circle" coords="284, 12, 381, 92, 293,175, 196,98" href="CSS.html" alt="CSS Webpage"
+                target="_blank">
+            <area shape="rect" coords="27,200,171,198,169,334,26,339 " href="JAVA-SCRIPT.html" alt="JavaScript Webpage"
+                target="_blank">
+            <area shape="poly" coords="284,204,344,226,336,299,288,326,242,299,233,225" href="BOOTSTRAP.html"
+                alt="BootSptap Webpage" target="_blank">
+
+        </map>
+        <p>Click on any of logo to know more about there Technologies.</p>
+    </div>
+
+</body>
+
+</html>
