@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fix Navigation Bar</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+    h1 {
+        color: white;
+        text-align: left;
+        font-size: 60px;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 40px;
+        color: black;
+        padding-top: 0px;
+    }
+
+    #header ul {
+        height: 60px;
+        list-style: none;
+        background-color: lightgray;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #header ul li {
+        display: inline-block;
+    }
+
+    #header ul li a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px 20px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    #header ul li a:hover {
+        background-color: white;
+        color: black;
+    }
+
+    #banner {
+        background-image: url('background-img.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        
+    }
+
+    #section1::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .circle1 {
+        background-image: url('img1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        float: left;
+        height: 250px;
+        width: 250px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .circle2 {
+        background-image: url('img2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        float: left;
+        height: 250px;
+        width: 250px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .circle3 {
+        background-image: url('img3.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        float: left;
+        height: 250px;
+        width: 250px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .circle4 {
+        background-image: url('img4.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        float: left;
+        height: 250px;
+        width: 250px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    #content::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    #left-side {
+        width: 49.5%;
+        height: 500px;
+        background-color: gray;
+        float: left;
+        margin-right: 10px;
+        color: white;
+        align-items: center;
+    }
+
+    #left-side h4 {
+        font-size: 30px;
+        color: white;
+        text-align: left;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+    #left-side p {
+        padding: 5px 5px;
+    }
+
+    .article1 {
+        width: 49.5%;
+        height: 160px;
+        background-image: url('pratical1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        float: right;
+        margin-bottom: 10px;
+    }
+
+    .article2 {
+        width: 49.5%;
+        height: 160px;
+        /*background-color: sandybrown;*/
+        background-image: url('practical2.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        float: right;
+        margin-bottom: 10px;
+    }
+
+    .article3 {
+        width: 49.5%;
+        height: 160px;
+        background-image: url('practical3.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        float: right;
+        margin-bottom: 10px;
+    }
+
+    .article h3 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    #section3::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .box {
+        background-color: white;
+        width: 260px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 50px;
+        padding: 20px;
+        border-radius: 10px;
+        float: left;
+    }
+
+    img {
+        width: 100%;
+        height: 160px;
+        border-radius: 10px;
+    }
+
+    h3 {
+        text-align: center;
+        margin-top: 0px;
+        padding-top: 0px;
+        font-size: 20px;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    .box a {
+        display: block;
+        background-color: red;
+        color: white;
+        border-radius: 10px;
+        text-align: center;
+        height: 20px;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .box a:hover {
+        background-color: blue;
+    }
+
+    #footer {
+        background-color: purple;
+        height: 80px;
+        font-size: 20px;
+        color: black;
+        text-align: center;
+        padding-top: 20px;
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+    <div id="header">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#Aboutuspage">ABOUT US</a></li>
+            <li><a href="#top">TEAM</a></li>
+            <li><a href="#Techpage">TECHNOLOGIES</a></li>
+            <li><a href="#bottom">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <div id="banner">
+        <h1>PRACTICAL-8</h1>
+    </div>
+    <div id="sec-1">
+        <h2><a name="top">Team Members</a></h2>
+    </div>
+
+    <div id="section1">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+    </div>
+    <div id="sec-2">
+        <a name="Aboutuspage">
+            <h2>About Us</h2>
+        </a>
+    </div>
+
+    <div id="section2">
+        <div id="content">
+            <div id="left-side">
+                <h4>About Project</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis obcaecati saepe quis nulla ad minus earum dolorum vero quaerat ab, voluptas animi autem consequatur odit maxime ea fugiat, et iste harum, qui provident vel expedita.
+                    Adipisci voluptates, eius debitis soluta expedita pariatur eos doloribus quisquam temporibus cum amet fugit in consequuntur et. Odit, doloribus dolor ducimus reprehenderit obcaecati quis modi maiores autem eligendi. Provident voluptatum
+                    porro esse modi adipisci eligendi tempore, optio sapiente vel dolor enim amet ducimus consequuntur. Nulla voluptas fuga sunt illo molestiae veritatis alias voluptates nisi unde. Qui officiis sequi aliquam corporis a saepe voluptas
+                    voluptates dignissimos cum! Adipisci ea doloribus harum aspernatur obcaecati, sed voluptates est incidunt quo delectus labore aliquid numquam repellat cupiditate pariatur sit quam ex neque explicabo accusantium deleniti enim hic
+                    facilis quod? Molestiae laudantium officia quo, explicabo quidem praesentium ad obcaecati porro qui similique tempore numquam non suscipit exercitationem dignissimos deleniti quae. Dolore quasi in dolores distinctio non, impedit
+                    autem ex sunt perferendis. Ipsum iusto, praesentium voluptate ipsam eius sequi illum. Officiis exercitationem illum et eius deserunt culpa, ut hic consectetur est, fuga saepe nulla quisquam voluptatibus nisi laborum, veritatis
+                    consequuntur maxime accusantium delectus? Magni ea mollitia suscipit, distinctio recusandae rerum quaerat.</p>
+            </div>
+            <div id="right-side">
+                <div class="article1">
+                    <h3>Project-1</h3>
+                </div>
+                <div class="article2">
+                    <h3>Project-2</h3>
+                </div>
+                <div class="article3">
+                    <h3>Project-3</h3>
+                </div>
+            </div>
+        </div>
+        <div id="sec-3">
+            <a name="Techpage">
+                <h2>Technologies Used</h2>
+            </a>
+        </div>
+
+        <div id="section3">
+            <div class="box">
+                <img src="HTML-img.png" alt="html image">
+                <h3>Introduction to HTML</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus veritatis officia maiores perferendis, necessitatibus distinctio nostrum nisi laudantium vero cumque!</p>
+                <a href="introhtml.html">Read More</a>
+            </div>
+            <div class="box">
+                <img src="CSS-img.png" alt="CSS image">
+                <h3>Introduction to CSS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus minima fugit porro. Reprehenderit repellat facere, officia ex iusto quos. Molestias.</p>
+                <a href="introcss.html">Read More</a>
+            </div>
+            <div class="box">
+                <img src="JavaScript-img.jpg" alt="javascript image">
+                <h3>Introduction to JavaScript</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias officia beatae veniam incidunt, dolor nihil reiciendis adipisci molestiae cumque quam.</p>
+                <a href="introjs.html">Read More</a>
+            </div>
+            <div class="box">
+                <img src="Bootstrap-img2.jpg" alt="Bootstrap image">
+                <h3>Introduction to BootStrap</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab sint, omnis tempore enim voluptate culpa tempora laudantium iusto consequuntur quam.</p>
+                <a href="introbootstrap.html">Read More</a>
+
+            </div>
+        </div>
+        <div id="sec-4">
+            <a name="bottom">
+                <h2>Contact</h2>
+            </a>
+        </div>
+
+        <div id="footer">Website Template for Practical-8 @<a href="https://www.beta-labs.in/">Beta-labs</a>
+            <br><br><a href="#">Back to top</a></div>
+    </div>
+</body>
+
+</html> 
