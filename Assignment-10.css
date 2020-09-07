@@ -114,6 +114,11 @@
   #chk:checked ~ .content{
     width: 80%;
   }
+  .content img{
+      width: fit-content;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
   @media (max-width:768px){
     .sidebar{
         width: 100%;
