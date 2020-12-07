@@ -1,17 +1,53 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Live Clock Using JS</title>
-    <link href="Assignment-17.css" rel="stylesheet">
-    <link href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-</head>   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-17</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Quicksand, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+            text-align: center;
+            flex-direction: column;
+            background-position: center;
+            background-size: cover;
+            color: white;
+        }
+
+        #time{
+            font-size: 8rem;
+        }
+
+        h2{
+            margin-top: 1rem;
+            font-size: 3rem;
+            opacity: 0.5;
+        }
+
+        h3{
+            margin-top: 1rem;
+            font-size: 2rem;
+        }
+    </style>
+</head>
 <body>
-<time id="time"></time>
-<h1 id="greeting"></h1>
-<h2 contenteditable="true" id="name"></h2>
-<h3 id="date"></h3>
-<script src="../JS/clock.js"></script>
+    <time id="time"></time>
+    <h1 id="greeting"></h1>
+    <h2 id="name" contenteditable="true"></h2>
+    <h3 id="date"></h3>
+
+    <script src="Assignment-17.js"> </script>
 </body>
 </html>
